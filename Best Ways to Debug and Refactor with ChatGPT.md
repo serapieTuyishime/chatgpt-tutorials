@@ -36,7 +36,7 @@ By following all the following tips and best practices, you can effectively use 
 
 - Give feedback: If Chat GPT's suggestions are helpful, let it know! This will help improve its performance and make it more effective for future debugging sessions.
 
-## Illustrations / Example
+## Illustration / Example
 
 Let's say you're working on a React application and you're encountering an error when trying to render a component. The error message you're seeing is not very helpful and you're not sure where to start debugging. You can use ChatGPT to help you identify and fix the issue.
 
