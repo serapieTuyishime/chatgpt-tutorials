@@ -187,3 +187,8 @@ function findLargestNumber(arr) {
   return Math.max(...arr);
 }
 ```
+
+## Resources
+
+- [ChatGPT for automating code refactoring](https://www.linkedin.com/pulse/using-chatgpt-automating-code-refactoring-unit-tests-exploring-karun/)
+- [The 10 Best Prompts for Instant Code Refactoring](https://levelup.gitconnected.com/the-10-best-prompts-for-instant-code-refactoring-according-to-chatgpt-7978d4bcc770)
