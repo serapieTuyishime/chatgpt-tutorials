@@ -18,7 +18,6 @@ Overall, ChatGPT is a valuable tool for any developer looking to improve their d
 
 By utilizing ChatGPT's expertise, developers can significantly improve their code quality and development process. Whether you're working with JavaScript, Python, or any other programming language, ChatGPT can help you identify and fix issues in your code, streamline your development process, and ultimately build better software.
 
-
 ## Tips and best practice
 
 By following all the following tips and best practices, you can effectively use Chat GPT for debugging and improve the efficiency of your development process.
@@ -37,47 +36,39 @@ By following all the following tips and best practices, you can effectively use 
 
 - Give feedback: If Chat GPT's suggestions are helpful, let it know! This will help improve its performance and make it more effective for future debugging sessions.
 
-
-# Illistrations/Examples
+## Illustration / Example
 
 Let's say you're working on a React application and you're encountering an error when trying to render a component. The error message you're seeing is not very helpful and you're not sure where to start debugging. You can use ChatGPT to help you identify and fix the issue.
 
-
 1. Ask question to ChatGTP.
- > Hey ChatGPT, I'm working on a React app and I'm getting an error when trying to render a component. The error message says "Cannot read property 'map' of undefined". Here's the code for the component:
+   > Hey ChatGPT, I'm working on a React app and I'm getting an error when trying to render a component. The error message says "Cannot read property 'map' of undefined". Here's the code for the component:
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function MyComponent(props) {
-    return (
-        <div>
-            {
-                props.items.map(item => ( <p>{item}</p>))
-            }
-        </div>
-    );
+  return (
+    <div>
+      {props.items.map((item) => (
+        <p>{item}</p>
+      ))}
+    </div>
+  );
 }
 export default MyComponent;
 ```
-> Can you help me identify and fix the issue?
 
+> Can you help me identify and fix the issue?
 
 2. ChatGPT may ask some follow-up questions to better understand the problem, such as whether the items prop is being passed correctly to the component.
 
 3. Once ChatGPT has enough information, it can suggest some potential solutions to the problem. For example, it may suggest checking whether the items prop is defined before trying to map over it, like so:
 
 ```js
-import React from 'react';
+import React from "react";
 
 function MyComponent(props) {
-  return (
-    <div>
-      {props.items && props.items.map(item => (
-        <p>{item}</p>
-      ))}
-    </div>
-  );
+  return <div>{props.items && props.items.map((item) => <p>{item}</p>)}</div>;
 }
 
 export default MyComponent;
@@ -87,7 +78,11 @@ export default MyComponent;
 
 As a result, ChatGPT may be a useful tool for debugging and reworking React apps, enabling developers to find problems as they arise without having to spend a lot of time on tedious debugging sessions.
 
-## Resources 
+## Conclusion
+
+Even though we've discussed different ways to debug code using ChatGPT, there are a ton of more options to consider. Because ChatGPT can understand and respond to developer questions in a more effective and natural way, it's a wonderful option for debugging. Developers may get precise and useful solutions that can steer them in the correct direction for resolving complicated problems by feeding ChatGPT the proper inputs and training it with previous debugging sessions. Debugging may be streamlined and made more efficient with ChatGPT, freeing developers to concentrate on writing high-quality code. As a result, we encourage readers to keep exploring ChatGPT's potential for code debugging and looking for methods to improve their workflow.
+
+## Resources
 
 - [ChatGPT](https://chat.openai.com/chat)
 - [@ChatGPTNFTs](https://twitter.com/ChatGPTNFTs)
@@ -97,8 +92,5 @@ As a result, ChatGPT may be a useful tool for debugging and reworking React apps
 
 - [Write effective chatgpt prompts](https://www.makeuseof.com/write-effective-chatgpt-prompts-for-ai-answers/)
 
-
-
-- [Adrian Twarog: What is GPT4 and How You Can Use OpenAI GPT 4](https://www.youtube.com/watch?v=KzSpKf4l6k4)  
+- [Adrian Twarog: What is GPT4 and How You Can Use OpenAI GPT 4](https://www.youtube.com/watch?v=KzSpKf4l6k4)
 - [Programming with Mosh: ChatGPT Tutorial for Developers - 38 Ways to 10x Your Productivity](https://www.youtube.com/watch?v=sTeoEFzVNSc)
-
